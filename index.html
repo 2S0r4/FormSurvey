@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    
+    <form>
+      <fieldset>
+        <h1 id="title">Gamers Survey Form</h1>
+        <p id="description">fill out our game survery by fullfilling this form.</p>
+        <form id="survey-form">
+          <label id="name-label">Name<input required placeholder="Full Name" id="name" type="text"></label>
+          <label id="email-label">Email<input required placeholder="Example@email.com" id="email" type="email"></label>
+          <label id="number-label">Age<input placeholder="13 +" id="number" type="number" min=13 max=100></label>
+      </fieldset>
+
+      <fieldset>
+        <label>What's your genre ?<select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">All-FPS class</option>
+          <option value="2">MOBA class</option>
+          <option value="3">RPG/MMORPG class</option>
+        </select></label>
+      </fieldset>
+
+      <fieldset>
+        <label>What's your type ?</label>
+        <label><input class="inline" checked name="shots" value="front" type="radio">Attack</label>
+        <label><input class="inline" name="shots" value="back" type="radio">Rusher</label>
+        <label><input class="inline" name="shots" value="back" type="radio">Defense</label>
+        <label><input class="inline" name="shots" value="back" type="radio">Support</label>
+        <label><input class="inline" name="shots" value="back" type="radio">All-Round</label>
+      </fieldset>
+      <fieldset>
+        <label>What's your Strats ?</label>
+        <label><input class="inline" checked name="gus" value="front" type="radio">Light</label>
+        <label><input class="inline" name="gus" value="back" type="radio">Medium</label>
+        <label><input class="inline" name="gus" value="back" type="radio">Medium-Heavy</label>
+        <label><input class="inline" name="gus" value="back" type="radio">Heavy</label>
+        <label><input class="inline" name="gus" value="back" type="radio">All-Round</label>
+      </fieldset>
+
+      <fieldset>
+        <label><input class="inline" type="checkbox" value="young"> I agree to follow the <a href="">terms & conditions</a></label>
+        <label><input class="inline" type="checkbox" value="drippy">I agree to receive the latest gaming news on email (Optional)</label>
+        <label class="describe">describe yourself<textarea cols="30" rows="10" placeholder="I like playing Valorant...."></textarea></label>
+      </fieldset>
+  
+      <input id="submit" type="submit">
+      </form>
+    </form>
+  </body>
+</html>
